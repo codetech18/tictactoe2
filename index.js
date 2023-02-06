@@ -1,6 +1,6 @@
 // Window.addEventListener('DOMContentLoaded', () => {
     const tiles = Array.from(document.querySelectorAll('.title'));
-    const playerDisplay = document.querySelector('.display player');
+    const playerDisplay = document.querySelector('.display-player');
     const resetButton = document.querySelector('#reset');
     const announcer = document.querySelector('.announcer'); 
 
@@ -64,7 +64,7 @@
             case TIE:
                 announcer.innerText ='Tie';
         }
-        announce.classList.remove('hide');
+        announcer.classList.remove('hide');
     };
 
     const isValidAction = (title) => {
